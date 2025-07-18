@@ -1,0 +1,215 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #264653;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #2a9d8f;
+}
+
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop') no-repeat center center/cover;
+    color: white;
+    padding: 6rem 1rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #e9c46a;
+    color: #264653;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#kpis h2 {
+    margin-bottom: 2rem;
+}
+.kpi-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.kpi-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 250px;
+}
+.kpi-card span:first-child {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2a9d8f;
+    display: block;
+}
+
+#pledge-form, #certificate {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+input, select, button {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2a9d8f;
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #e76f51;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #f4a261;
+}
+
+#pledge-wall {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+}
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+th {
+    background-color: #f9f9f9;
+    color: #2a9d8f;
+}
+
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+.commitments {
+    text-align: left;
+    margin: 1.5rem 0;
+}
+.commitments h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+legend {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #2a9d8f;
+    padding: 0 0.5rem;
+}
+.commitments label {
+    display: block;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#cert-rating {
+    font-size: 3rem;
+    color: #e76f51; 
+    margin-top: 1rem;
+}
+
+.cert-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cert-actions button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cert-actions button:hover {
+    background-color: #264653;
+}
+
+#certificate-content {
+    padding: 2rem;
+}

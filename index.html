@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action Pledge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <section id="hero">
+        <h1>Take the Pledge for a Better Planet</h1>
+        <p>Individual actions create powerful collective impact. Join the movement!</p>
+        <a href="#pledge-form" class="cta-button">Take the Pledge</a>
+    </section>
+
+    <section id="kpis">
+        <h2>Our Progress</h2>
+        <div class="kpi-card">
+            <span id="achieved-pledges">0</span>
+            <span>/ 1,000,000 Pledges</span>
+        </div>
+        <div class="kpi-breakdown">
+            <p>Students: <span id="student-count">0</span></p>
+            <p>Professionals: <span id="pro-count">0</span></p>
+        </div>
+    </section>
+
+    <section id="why">
+        <h2>Why Take Climate Action?</h2>
+        <p>Your commitment joins a global movement. Small, conscious habits in our daily lives are the most powerful force we have for protecting our planet for future generations.</p>
+    </section>
+
+    <section id="pledge-form">
+    <h2>Make Your Pledge</h2>
+    <form id="form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="mobile" placeholder="Mobile Number" required>
+        <input type="text" id="state" placeholder="State">
+        <select id="profile" required>
+            <option value="Student">Student</option>
+            <option value="Working Professional">Working Professional</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <div class="commitments">
+            <h3>Choose Your Commitments</h3>
+            <fieldset>
+                <legend>Reduce & Reuse</legend>
+                <label><input type="checkbox" name="commitment" value="1"> Carry a reusable water bottle.</label>
+                <label><input type="checkbox" name="commitment" value="1"> Say no to plastic straws.</label>
+                <label><input type="checkbox" name="commitment" value="1"> Use reusable shopping bags.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Conserve Energy</legend>
+                <label><input type="checkbox" name="commitment" value="1"> Unplug electronics when not in use.</label>
+                <label><input type="checkbox" name="commitment" value="1"> Switch to LED light bulbs.</label>
+                <label><input type="checkbox" name="commitment" value="1"> Take shorter showers.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Stay Informed</legend>
+                <label><input type="checkbox" name="commitment" value="1"> Share climate facts with a friend.</label>
+                <label><input type="checkbox" name="commitment" value="1"> Follow a climate news source.</label>
+                <label><input type="checkbox" name="commitment" value="1"> Calculate my carbon footprint.</label>
+            </fieldset>
+        </div>
+        <button type="submit">I Pledge!</button>
+    </form>
+</section>
+    
+    <section id="certificate" class="hidden">
+    <div id="certificate-content"> <h2>Congratulations, <span id="cert-name"></span>!</h2>
+        <p>"Cool Enough to Care!"</p>
+        <div id="cert-rating"></div>
+    </div>
+    <div class="cert-actions"> <button id="download-btn">Download Certificate</button>
+        <button id="share-btn">Share</button>
+    </div>
+</section>
+
+    <section id="pledge-wall">
+        <h2>Public Pledge Wall</h2>
+        <table id="pledge-table">
+            <thead>
+    <tr>
+        <th>Pledge ID</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>State</th>
+        <th>Profile</th>
+        <th>Love for Planet</th> </tr>
+</thead>
+            <tbody>
+                </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p><strong>Privacy Note:</strong> Your Email and Mobile Number are used for validation and engagement only and will never be displayed publicly.    </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
