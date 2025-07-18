@@ -54,6 +54,6 @@ To run this project on your local machine:
     ```
 2.  Navigate into the project directory:
     ```bash
-    cd YOUR_REPO_NAME
+    cd climate-pledge-microsite
     ```
 3.  Open the `index.html` file in your web browser. No special servers are needed.

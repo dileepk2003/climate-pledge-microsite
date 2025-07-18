@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mockPledges = [
         { id: 1, name: 'Alex Green', date: '2025-07-15', state: 'California', profile: 'Student', rating: '⭐⭐' },
-        { id: 2, name: 'Brenda Blue', date: '2025-07-16', state: 'New York', profile: 'Working Professional', rating: '⭐⭐⭐' }
+        { id: 2, name: 'Sai Karthik', date: '2025-07-16', state: 'New York', profile: 'Working Professional', rating: '⭐⭐⭐' },
+        { id: 3, name: 'Subramaniam Iyer', date: '2025-07-18', state: 'Tamil Nadu', profile: 'Student', rating: '⭐⭐⭐' }
     ];
 
     const achievedPledgesEl = document.getElementById('achieved-pledges');
